@@ -47,7 +47,7 @@ This repository includes example JSON files for various review types:
 
 To integrate with this lexicon in your application:
 
-1. Use `community.lexicon.reviews.main` as the record type
+1. Use `community.lexicon.reviews.review` as the record type
 2. Ensure required fields are included
 3. Add optional fields as needed for your specific use case
 
