@@ -155,33 +155,6 @@
               "required": ["updatedAt"]
             }
           },
-          "response": {
-            "type": "object",
-            "description": "Official response from the reviewed entity",
-            "properties": {
-              "content": {
-                "type": "string",
-                "description": "Response text",
-                "maxLength": 2000
-              },
-              "respondentName": {
-                "type": "string",
-                "description": "Name of responding person or organization",
-                "maxLength": 100
-              },
-              "respondentRole": {
-                "type": "string",
-                "description": "Role of the respondent (e.g., Owner, Customer Service)",
-                "maxLength": 100
-              },
-              "respondedAt": {
-                "type": "string",
-                "format": "datetime",
-                "description": "When the response was provided"
-              }
-            },
-            "required": ["content", "respondedAt"]
-          },
           "disclosures": {
             "type": "object",
             "description": "Transparency disclosures about this review",
