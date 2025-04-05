@@ -1,0 +1,42 @@
+{
+  "$type": "community.lexicon.reviews.main",
+  "subject": {
+    "type": "media",
+    "uri": "at://did:plc:bookstore/app.bsky.books/book789",
+    "name": "The Echo of Old Worlds"
+  },
+  "rating": 4,
+  "content": "This science fiction novel beautifully weaves together three storylines across different time periods. The author's prose is elegant and evocative, particularly in the passages describing the alien landscapes. The character development is strong for the two main protagonists, though some of the supporting cast feels slightly underdeveloped. The philosophical questions posed throughout are thought-provoking without becoming heavy-handed. My only criticism is that the final act feels somewhat rushed compared to the carefully paced earlier sections. Overall, a compelling read that will stay with you long after you've finished it.",
+  "media": [
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreihgfxcv7y25243qdmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmbook"
+        },
+        "mimeType": "image/jpeg",
+        "size": 542651
+      },
+      "alt": "Book cover showing three moons over an alien landscape"
+    }
+  ],
+  "verifiedPurchase": true,
+  "allowSyndication": true,
+  "license": {
+    "type": "cc-by-nc",
+    "uri": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "categories": ["science-fiction", "philosophical", "space-opera", "first-contact", "multiple-timelines"],
+  "metrics": {
+    "quality": 4,
+    "value": 5
+  },
+
+  "disclosures": {
+    "receivedFree": false,
+    "sponsoredContent": false
+  },
+  "experienceLevel": "expert",
+  "recommended": true,
+  "createdAt": "2025-03-15T14:22:10.456Z"
+}

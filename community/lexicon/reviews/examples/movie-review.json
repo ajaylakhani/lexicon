@@ -1,0 +1,61 @@
+
+{
+  "$type": "community.lexicon.reviews.main",
+  "subject": {
+    "type": "media",
+    "uri": "at://did:plc:cinemadb/app.bsky.movies/movie456",
+    "name": "Beyond the Horizon"
+  },
+  "rating": 5,
+  "content": "Director Amara Chen's latest masterpiece is a stunning visual symphony that explores themes of belonging and identity. The cinematography is breathtaking - every frame could be hung in an art gallery. The lead performances from both Jackson and Rivera are career-defining, with their chemistry making even the most fantastical elements feel grounded and real. The score by Nolan Kim perfectly complements the emotional beats of the story, swelling at just the right moments without being manipulative. While the middle section briefly drags, the third act delivers one of the most satisfying conclusions I've seen in years. This film deserves every award nomination it will inevitably receive.",
+  "media": [
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreicbgxvd7y25243qdmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmmovie"
+        },
+        "mimeType": "image/jpeg",
+        "size": 768432
+      },
+      "alt": "Scene from the film showing the two main characters on a cliff at sunset"
+    },
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreib2g45vnxaq3dmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmhijk"
+        },
+        "mimeType": "video/mp4",
+        "size": 986512
+      },
+      "alt": "Short clip of the film's pivotal scene (no spoilers)"
+    }
+  ],
+  "verifiedPurchase": true,
+  "allowSyndication": false,
+  "license": {
+    "type": "all-rights-reserved"
+  },
+  "categories": ["drama", "sci-fi", "awards-contender", "character-driven", "visual-masterpiece"],
+  "metrics": {
+    "quality": 5,
+    "value": 5,
+    "ambiance": 5
+  },
+  "response": {
+    "content": "Thank you for your thoughtful review of our film! The team poured their hearts into this project, and we're so glad it resonated with you. -Amara Chen",
+    "respondentName": "Amara Chen",
+    "respondentRole": "Director",
+    "respondedAt": "2025-02-18T16:45:22.123Z"
+  },
+  "disclosures": {
+    "receivedFree": true,
+    "sponsoredContent": false,
+    "otherConflict": "Attended press screening"
+  },
+  "experienceLevel": "expert",
+  "recommended": true,
+  "visitDate": "2025-02-10T19:00:00.000Z",
+  "createdAt": "2025-02-15T23:17:42.789Z"
+}

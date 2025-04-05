@@ -1,0 +1,277 @@
+{
+  "lexicon": 1,
+  "id": "community.lexicon.reviews.main",
+  "description": "Schema for standardized reviews and ratings across various domains",
+  "defs": {
+    "main": {
+      "type": "record",
+      "description": "A review record that can be associated with various entities",
+      "key": "tid",
+      "record": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "object",
+            "description": "The entity being reviewed",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "Type of entity being reviewed",
+                "enum": ["product", "service", "location", "media", "experience", "other"]
+              },
+              "uri": {
+                "type": "string",
+                "format": "uri",
+                "description": "Identifier for the reviewed entity"
+              },
+              "name": {
+                "type": "string",
+                "description": "Name of the reviewed entity",
+                "maxLength": 256
+              }
+            },
+            "required": ["type", "uri"]
+          },
+          "rating": {
+            "type": "integer",
+            "description": "Overall numerical rating",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "content": {
+            "type": "string",
+            "description": "Review text content",
+            "maxLength": 5000
+          },
+          "media": {
+            "type": "array",
+            "description": "Images or videos attached to the review",
+            "items": {
+              "type": "object",
+              "properties": {
+                "image": {
+                  "type": "blob",
+                  "accept": ["image/*", "video/*"],
+                  "maxSize": 1000000,
+                  "description": "The image or video file"
+                },
+                "alt": {
+                  "type": "string",
+                  "description": "Alt text description of the media",
+                  "maxLength": 300
+                }
+              },
+              "required": ["image"]
+            },
+            "maxLength": 4
+          },
+          "verifiedPurchase": {
+            "type": "boolean",
+            "description": "Indicates if the reviewer has verifiably purchased or used the subject"
+          },
+          "allowSyndication": {
+            "type": "boolean",
+            "description": "Whether the reviewer permits this review to be syndicated to other platforms",
+            "default": false
+          },
+          "license": {
+            "type": "object",
+            "description": "Licensing information for the review content and media",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "The type of license applied to this review",
+                "enum": ["standard", "extended", "exclusive", "cc-by", "cc-by-sa", "cc-by-nd", "cc-by-nc", "cc-by-nc-sa", "cc-by-nc-nd", "cc0", "all-rights-reserved"]
+              },
+              "uri": {
+                "type": "string",
+                "format": "uri",
+                "description": "URI reference to the full license terms"
+              },
+              "description": {
+                "type": "string",
+                "description": "Brief description of the license terms",
+                "maxLength": 500
+              }
+            },
+            "required": ["type"]
+          },
+          "categories": {
+            "type": "array",
+            "description": "Tags or categories applied to this review",
+            "items": {
+              "type": "string",
+              "maxLength": 64
+            },
+            "maxLength": 5
+          },
+          "metrics": {
+            "type": "object",
+            "description": "Detailed ratings for specific aspects",
+            "properties": {
+              "quality": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5,
+                "description": "Quality of the product or service"
+              },
+              "service": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5,
+                "description": "Quality of customer service"
+              },
+              "value": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5,
+                "description": "Value for money"
+              },
+              "ambiance": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5,
+                "description": "Quality of atmosphere or environment"
+              }
+            }
+          },
+          "revisions": {
+            "type": "array",
+            "description": "History of updates to this review",
+            "items": {
+              "type": "object",
+              "properties": {
+                "updatedAt": {
+                  "type": "string",
+                  "format": "datetime",
+                  "description": "When this revision was made"
+                },
+                "reason": {
+                  "type": "string",
+                  "description": "Reason for the update",
+                  "maxLength": 500
+                }
+              },
+              "required": ["updatedAt"]
+            }
+          },
+          "response": {
+            "type": "object",
+            "description": "Official response from the reviewed entity",
+            "properties": {
+              "content": {
+                "type": "string",
+                "description": "Response text",
+                "maxLength": 2000
+              },
+              "respondentName": {
+                "type": "string",
+                "description": "Name of responding person or organization",
+                "maxLength": 100
+              },
+              "respondentRole": {
+                "type": "string",
+                "description": "Role of the respondent (e.g., Owner, Customer Service)",
+                "maxLength": 100
+              },
+              "respondedAt": {
+                "type": "string",
+                "format": "datetime",
+                "description": "When the response was provided"
+              }
+            },
+            "required": ["content", "respondedAt"]
+          },
+          "disclosures": {
+            "type": "object",
+            "description": "Transparency disclosures about this review",
+            "properties": {
+              "receivedFree": {
+                "type": "boolean",
+                "description": "Indicates if reviewer received the product/service for free"
+              },
+              "sponsoredContent": {
+                "type": "boolean",
+                "description": "Indicates if this is a sponsored or paid review"
+              },
+              "employeeRelationship": {
+                "type": "boolean",
+                "description": "Indicates if reviewer has an employment relationship with subject"
+              },
+              "otherConflict": {
+                "type": "string",
+                "description": "Description of any other potential conflicts of interest",
+                "maxLength": 500
+              }
+            }
+          },
+          "locationContext": {
+            "type": "object",
+            "description": "Geographic context for where the review was created or experienced",
+            "properties": {
+              "latitude": {
+                "type": "string",
+                "description": "Latitude coordinate"
+              },
+              "longitude": {
+                "type": "string",
+                "description": "Longitude coordinate"
+              },
+              "name": {
+                "type": "string",
+                "description": "Human-readable location name",
+                "maxLength": 200
+              },
+              "countryCode": {
+                "type": "string",
+                "description": "ISO country code",
+                "maxLength": 2
+              }
+            }
+          },
+          "experienceLevel": {
+            "type": "string",
+            "description": "Reviewer's self-reported experience level with this type of subject",
+            "enum": ["novice", "intermediate", "expert", "professional"]
+          },
+          "translation": {
+            "type": "object",
+            "description": "Translation metadata if review was translated",
+            "properties": {
+              "isTranslated": {
+                "type": "boolean",
+                "description": "Whether this review is a translation"
+              },
+              "originalLanguage": {
+                "type": "string",
+                "format": "language",
+                "description": "Original language code"
+              },
+              "translatedBy": {
+                "type": "string",
+                "description": "Name of translator or translation service",
+                "maxLength": 100
+              }
+            },
+            "required": ["isTranslated", "originalLanguage"]
+          },
+          "recommended": {
+            "type": "boolean",
+            "description": "Whether the reviewer recommends this to others"
+          },
+          "visitDate": {
+            "type": "string",
+            "format": "datetime",
+            "description": "When the reviewer experienced or used the subject"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "datetime",
+            "description": "Timestamp when the review was created"
+          }
+        },
+        "required": ["subject", "rating", "createdAt"]
+      }
+    }
+  }
+}

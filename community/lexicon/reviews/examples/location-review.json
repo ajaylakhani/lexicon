@@ -1,0 +1,88 @@
+{
+  "$type": "community.lexicon.reviews.main",
+  "subject": {
+    "type": "location",
+    "uri": "at://did:plc:travelapp/app.bsky.locations/location555",
+    "name": "Emerald Cove National Park"
+  },
+  "rating": 5,
+  "content": "Emerald Cove is truly a hidden gem among national parks. We visited during early fall (mid-September) and experienced perfect weather with fewer crowds than the summer months. The park offers an incredible diversity of landscapes - from the dramatic coastal cliffs to the ancient redwood groves inland. The Osprey Trail provides breathtaking ocean views with relatively moderate hiking difficulty, suitable for most fitness levels. We spotted sea lions, harbor seals, and even a gray whale from the Lighthouse Point overlook. The Fern Canyon area was magical, with 50-foot walls draped in seven different species of ferns and a gentle stream running through - it felt like walking through a prehistoric world. Campgrounds were clean and well-maintained, though reservations are essential even in shoulder season. Park rangers were knowledgeable and offered excellent programs; the night sky talk and star viewing session was particularly memorable. The visitor center has impressive interactive exhibits for all ages. If you're planning a visit, I'd recommend at least 3 full days to experience the different ecosystems within the park. Don't miss the tide pools at low tide - we saw starfish, anemones, and colorful nudibranchs.",
+  "media": [
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreihgfxcv7y25243qdmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmcoastview"
+        },
+        "mimeType": "image/jpeg",
+        "size": 945678
+      },
+      "alt": "Stunning view from Osprey Trail overlooking the Pacific Ocean with coastal cliffs"
+    },
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreib2g45vnxaq3dmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmredwoods"
+        },
+        "mimeType": "image/jpeg",
+        "size": 865432
+      },
+      "alt": "Sunlight filtering through ancient redwood trees in the forest section"
+    },
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreibwxyzabcd3dmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmtidepool"
+        },
+        "mimeType": "image/jpeg",
+        "size": 756123
+      },
+      "alt": "Colorful tide pool with starfish and sea anemones"
+    },
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkrelmnopqrst3dmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmwildlife"
+        },
+        "mimeType": "video/mp4",
+        "size": 995432
+      },
+      "alt": "Short video of sea lions lounging on rocks near Lighthouse Point"
+    }
+  ],
+  "verifiedPurchase": true,
+  "allowSyndication": true,
+  "license": {
+    "type": "cc-by-sa",
+    "uri": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "categories": ["national-park", "hiking", "nature", "wildlife", "camping"],
+  "metrics": {
+    "quality": 5,
+    "service": 5,
+    "value": 5,
+    "ambiance": 5
+  },
+
+  "disclosures": {
+    "receivedFree": false,
+    "sponsoredContent": false
+  },
+  "locationContext": {
+    "latitude": "41.2132",
+    "longitude": "-124.0046",
+    "name": "Northern California",
+    "countryCode": "US"
+  },
+  "experienceLevel": "intermediate",
+  "translation": {
+    "isTranslated": false,
+    "originalLanguage": "en"
+  },
+  "recommended": true,
+  "visitDate": "2024-09-15T00:00:00.000Z",
+  "createdAt": "2024-09-22T14:33:27.789Z"
+}

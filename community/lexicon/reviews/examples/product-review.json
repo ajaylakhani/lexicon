@@ -1,0 +1,77 @@
+{
+  "$type": "community.lexicon.reviews.main",
+  "subject": {
+    "type": "product",
+    "uri": "at://did:plc:techstore/app.bsky.products/product123",
+    "name": "SonicWave Pro Noise-Cancelling Headphones"
+  },
+  "rating": 4,
+  "content": "After using these headphones daily for the past month during my commute and workday, I'm impressed with their overall performance. The noise cancellation is exceptional - completely eliminating subway noise and reducing office chatter to a whisper. Battery life consistently reaches the advertised 28 hours, and the quick-charge feature (10 minutes for 3 hours of playback) has saved me several times. Sound quality is excellent for most genres, with rich bass and clear highs, though classical music can sometimes sound a bit compressed. The companion app offers useful EQ customization. Comfort is good but not perfect - the ear cups create some pressure during extended wear (4+ hours). Build quality seems sturdy, and I appreciate the premium materials. For the price point, these deliver excellent value compared to competitors.",
+  "media": [
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreihgfxcv7y25243qdmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmheadphone"
+        },
+        "mimeType": "image/jpeg",
+        "size": 645781
+      },
+      "alt": "SonicWave Pro headphones in black, showing the padded headband and ear cups"
+    },
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreib2g45vnxaq3dmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmcase"
+        },
+        "mimeType": "image/jpeg",
+        "size": 532168
+      },
+      "alt": "Headphones folded into their carrying case"
+    },
+    {
+      "image": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreibwxyzabcd3dmlc7pp2tbjqumcjbeprhwmqbgvs6c2xmcmunbox"
+        },
+        "mimeType": "video/mp4",
+        "size": 897612
+      },
+      "alt": "Short unboxing and first impression video"
+    }
+  ],
+  "verifiedPurchase": true,
+  "allowSyndication": true,
+  "license": {
+    "type": "cc-by",
+    "uri": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "categories": ["headphones", "audio", "noise-cancelling", "wireless", "premium"],
+  "metrics": {
+    "quality": 4,
+    "value": 5
+  },
+
+  "revisions": [
+    {
+      "updatedAt": "2025-01-25T14:22:30.000Z",
+      "reason": "Added information about battery life after longer testing period"
+    }
+  ],
+  "response": {
+    "content": "Thank you for your detailed review! We're pleased to hear you're enjoying the noise cancellation and battery life. Regarding comfort during extended wear, we'd love to hear more about your experience to help us improve future iterations. Please contact our customer support team if you'd like to share additional feedback.",
+    "respondentName": "SonicWave Product Team",
+    "respondentRole": "Customer Experience",
+    "respondedAt": "2025-01-26T11:32:45.000Z"
+  },
+  "disclosures": {
+    "receivedFree": false,
+    "sponsoredContent": false
+  },
+  "experienceLevel": "intermediate",
+  "recommended": true,
+  "visitDate": "2024-12-20T00:00:00.000Z",
+  "createdAt": "2025-01-20T19:42:15.456Z"
+}
