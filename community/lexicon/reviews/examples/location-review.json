@@ -1,5 +1,5 @@
 {
-  "$type": "community.lexicon.reviews.main",
+  "$type": "community.lexicon.reviews.review",
   "subject": {
     "type": "location",
     "uri": "at://did:plc:travelapp/app.bsky.locations/location555",
