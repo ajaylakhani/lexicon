@@ -1,6 +1,6 @@
 {
   "lexicon": 1,
-  "id": "community.lexicon.reviews.main",
+  "id": "community.lexicon.reviews.review",
   "description": "Schema for standardized reviews and ratings across various domains",
   "defs": {
     "main": {
