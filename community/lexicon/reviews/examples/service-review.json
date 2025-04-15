@@ -1,5 +1,5 @@
 {
-  "$type": "community.lexicon.reviews.main",
+  "$type": "community.lexicon.reviews.review",
   "subject": {
     "type": "service",
     "uri": "at://did:plc:servicedir/app.bsky.services/service321",
