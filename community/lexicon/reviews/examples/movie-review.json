@@ -1,6 +1,6 @@
 
 {
-  "$type": "community.lexicon.reviews.main",
+  "$type": "community.lexicon.reviews.review",
   "subject": {
     "type": "media",
     "uri": "at://did:plc:cinemadb/app.bsky.movies/movie456",
